@@ -8,5 +8,12 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+
+    <access origin="http://127.0.0.1*" />
     <access origin="*" />
+
+    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.6" />
 </widget>

@@ -56,6 +56,7 @@
 		4928181715DA44869751446A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEB94DFDA5E41AB83F3F4B4 /* UIKit.framework */; };
 		1A58CE3F0249416B9B60E6B0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFC79F9428543D9A8611270 /* libc++.dylib */; };
 		F7BF18CF65294028BBE44BA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DD23F608CC42D7BFD1EFFE /* libz.dylib */; };
+		68E6D6226B5B442988BA07B2 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 166E2630BC474E979142741A /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,8 @@
 		DDEB94DFDA5E41AB83F3F4B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		8BFC79F9428543D9A8611270 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
 		93DD23F608CC42D7BFD1EFFE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		166E2630BC474E979142741A /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		1E22A9EEF49D4FBFB8F1F91A /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +301,8 @@
 				B6D84EF8715D41B187ABA8AF /* WTWikitudePlugin.h */,
 				FFE15718A1054D1E85677C26 /* WTARViewController.h */,
 				A1A8ED3BBC154AD9A0E99777 /* WTArchitectView.h */,
+				166E2630BC474E979142741A /* CDVLocation.m */,
+				1E22A9EEF49D4FBFB8F1F91A /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = "GeoAR/Plugins";
@@ -494,6 +499,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				BAB36A1C09AD4521B257B95D /* WTWikitudePlugin.m in Sources */,
 				096B3BC241B642ECB9DEAB9C /* WTARViewController.m in Sources */,
+				68E6D6226B5B442988BA07B2 /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

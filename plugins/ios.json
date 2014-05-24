@@ -127,6 +127,10 @@
                         {
                             "xml": "<access origin=\"*\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -135,6 +139,9 @@
     },
     "installed_plugins": {
         "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "im.dnn.geoar"
+        },
+        "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "im.dnn.geoar"
         }
     },
