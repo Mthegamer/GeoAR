@@ -6,76 +6,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Google Maps - jQuery Mobile Demos</title>
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
-	<style>
-		#map-page { width: 100%; height: 100%; padding: 0; }
-		#map-canvas { width: 100%; height: 60%; padding: 0; }
-		#info-loc { width: 100%; height: 40%; padding: 0; }
-	</style>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<style>
+	[data-role="header"] { padding-top: 20px !important;}
+	</style>
 
-	<script type="text/javascript" src="phonegap.js"></script>
-	<script src="js/jquery.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="cordova.js"></script> 
+	<script src="cordova_plugins.js"></script>
+
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script>
 
-	function run () {
-		$( document ).on( "pagecreate", "#map-page", function() {
-			var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);
-
-			if ( navigator.geolocation ) {
-				function success(pos) {
-					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-
-					$('#o_lat').text(pos.coords.latitude);
-					$('#o_lng').text(pos.coords.longitude);
-					$('#o_alt').text(pos.coords.altitude);
-				}
-				function fail(error) {
-					drawMap(defaultLatLng);
-				}
-				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
-			} else {
-				drawMap(defaultLatLng);
-			}
-
-			function drawMap(latlng) {
-				var myOptions = {
-					zoom: 10,
-					center: latlng,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				};
-				var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
-				var marker = new google.maps.Marker({
-					position: latlng,
-					map: map,
-					title: "Greetings!"
-				});
-			}
-
-		});
-	}
-	document.addEventListener("deviceready", run, false);
-	</script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="map-page">
 	<div data-role="header" data-theme="a">
-	<h1>Maps</h1>
+		<h1>Maps</h1>
 	</div>
 
-	<div role="main" class="ui-content" id="map-canvas">
+	<div class="ui-content" id="map-canvas">
 		<!-- map loads here... -->
 	</div>
 
-	<div role="main" class="ui-content" id="info-loc">
+	<div class="ui-content" id="info-loc">
 		<h1>Tu ubicación</h1>
 		<ul data-role="listview">
-		<li><b>Latitud</b> <output id="o_lat"></output></li>
-		<li><b>Longitud</b> <output id="o_lng"></output></li>
-		<li><b>Altitud</b> <output id="o_alt"></output></li>
+			<li><b>Latitud</b> <output id="o_lat"></output></li>
+			<li><b>Longitud</b> <output id="o_lng"></output></li>
+			<li><b>Altitud</b> <output id="o_alt"></output></li>
 		</ul>
 	</div>
 </div>
