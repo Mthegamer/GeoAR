@@ -6,9 +6,14 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
+		0843DC7EA3B74EA3AEF92DEF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C289C32904414D80B72076 /* Security.framework */; };
+		096B3BC241B642ECB9DEAB9C /* WTARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B602D3CC5234952B4FD2153 /* WTARViewController.m */; };
+		1A58CE3F0249416B9B60E6B0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFC79F9428543D9A8611270 /* libc++.dylib */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1DA35421C159449EAB08C0F1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E10A3C480145C68B15BB97 /* CoreMedia.framework */; };
 		1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDC13BBADB100FB74C0 /* Localizable.strings */; };
+		26504352B9C240708BA1A1EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1D00991EBE41B3A5078F41 /* Foundation.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
@@ -25,8 +30,16 @@
 		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
 		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		3CFEDBF53210447F993FC47A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08C0B3766A14252A35FFB46 /* QuartzCore.framework */; };
+		490B35770CF5474787E83B04 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757A8C9D7541A7BD48FAD2 /* CFNetwork.framework */; };
+		4928181715DA44869751446A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEB94DFDA5E41AB83F3F4B4 /* UIKit.framework */; };
+		4F4C5DCAB0A244828BBA3268 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBB7A9EFBB44175BE711094 /* CoreVideo.framework */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		68E6D6226B5B442988BA07B2 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 166E2630BC474E979142741A /* CDVLocation.m */; };
+		750C87D3A2A1484CA6733663 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB88FCBE4C04B74A53609B6 /* CoreText.framework */; };
+		768C322E74314F12A522ECF2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F4FCA5BE7445F3A078182D /* AVFoundation.framework */; };
+		7700B0383B81413B9BB586BB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD51C4F1BD394B66837538C8 /* OpenGLES.framework */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
 		7E7966E01810823500FA85AD /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D61810823500FA85AD /* icon-50.png */; };
@@ -37,26 +50,13 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
-		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		BAB36A1C09AD4521B257B95D /* WTWikitudePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FB4DB0B69B4EEBAAE52798 /* WTWikitudePlugin.m */; };
-		096B3BC241B642ECB9DEAB9C /* WTARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B602D3CC5234952B4FD2153 /* WTARViewController.m */; };
-		D68647CC727A49CAACA02972 /* libWikitudeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E805332AA224198B0632008 /* libWikitudeSDK.a */; };
-		768C322E74314F12A522ECF2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F4FCA5BE7445F3A078182D /* AVFoundation.framework */; };
-		490B35770CF5474787E83B04 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757A8C9D7541A7BD48FAD2 /* CFNetwork.framework */; };
-		1DA35421C159449EAB08C0F1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E10A3C480145C68B15BB97 /* CoreMedia.framework */; };
-		DD2562A6D01E4891AD289EE4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531B2D6F623741C8A5FF0A49 /* CoreMotion.framework */; };
-		750C87D3A2A1484CA6733663 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB88FCBE4C04B74A53609B6 /* CoreText.framework */; };
-		4F4C5DCAB0A244828BBA3268 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBB7A9EFBB44175BE711094 /* CoreVideo.framework */; };
-		26504352B9C240708BA1A1EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1D00991EBE41B3A5078F41 /* Foundation.framework */; };
 		83D803D8E124444EAC108799 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4CB276560F4232A0EBDA94 /* MediaPlayer.framework */; };
-		7700B0383B81413B9BB586BB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD51C4F1BD394B66837538C8 /* OpenGLES.framework */; };
-		3CFEDBF53210447F993FC47A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08C0B3766A14252A35FFB46 /* QuartzCore.framework */; };
-		0843DC7EA3B74EA3AEF92DEF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C289C32904414D80B72076 /* Security.framework */; };
+		BAB36A1C09AD4521B257B95D /* WTWikitudePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FB4DB0B69B4EEBAAE52798 /* WTWikitudePlugin.m */; };
 		D2B5EB1F86804EB198116228 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F666E41FD3CF41A696B71B39 /* SystemConfiguration.framework */; };
-		4928181715DA44869751446A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEB94DFDA5E41AB83F3F4B4 /* UIKit.framework */; };
-		1A58CE3F0249416B9B60E6B0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFC79F9428543D9A8611270 /* libc++.dylib */; };
+		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		D68647CC727A49CAACA02972 /* libWikitudeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E805332AA224198B0632008 /* libWikitudeSDK.a */; };
+		DD2562A6D01E4891AD289EE4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531B2D6F623741C8A5FF0A49 /* CoreMotion.framework */; };
 		F7BF18CF65294028BBE44BA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DD23F608CC42D7BFD1EFFE /* libz.dylib */; };
-		68E6D6226B5B442988BA07B2 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 166E2630BC474E979142741A /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,14 +77,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B602D3CC5234952B4FD2153 /* WTARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTARViewController.m; path = com.wikitude.phonegap.WikitudePlugin/WTARViewController.m; sourceTree = "<group>"; };
+		0F757A8C9D7541A7BD48FAD2 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		166E2630BC474E979142741A /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = org.apache.cordova.geolocation/CDVLocation.m; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* GeoAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeoAR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* GeoAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E22A9EEF49D4FBFB8F1F91A /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = org.apache.cordova.geolocation/CDVLocation.h; sourceTree = "<group>"; };
 		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		1FBB7A9EFBB44175BE711094 /* CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = "CordovaLib/CordovaLib.xcodeproj"; sourceTree = "<group>"; };
+		2AB88FCBE4C04B74A53609B6 /* CoreText.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -103,8 +109,14 @@
 		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GeoAR-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoAR-Prefix.pch"; sourceTree = "<group>"; };
+		32F4FCA5BE7445F3A078182D /* AVFoundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		35E10A3C480145C68B15BB97 /* CoreMedia.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4E4CB276560F4232A0EBDA94 /* MediaPlayer.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		531B2D6F623741C8A5FF0A49 /* CoreMotion.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		60C289C32904414D80B72076 /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7E1D00991EBE41B3A5078F41 /* Foundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
@@ -115,35 +127,23 @@
 		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		8BFC79F9428543D9A8611270 /* libc++.dylib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* GeoAR-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GeoAR-Info.plist"; path = "../GeoAR-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8E805332AA224198B0632008 /* libWikitudeSDK.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libWikitudeSDK.a; path = GeoAR/Plugins/com.wikitude.phonegap.WikitudePlugin/libWikitudeSDK.a; sourceTree = "<group>"; };
+		93DD23F608CC42D7BFD1EFFE /* libz.dylib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A08C0B3766A14252A35FFB46 /* QuartzCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A1A8ED3BBC154AD9A0E99777 /* WTArchitectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTArchitectView.h; path = com.wikitude.phonegap.WikitudePlugin/WTArchitectView.h; sourceTree = "<group>"; };
+		B6D84EF8715D41B187ABA8AF /* WTWikitudePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTWikitudePlugin.h; path = com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.h; sourceTree = "<group>"; };
+		BD51C4F1BD394B66837538C8 /* OpenGLES.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C5FB4DB0B69B4EEBAAE52798 /* WTWikitudePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTWikitudePlugin.m; path = com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.m; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		DDEB94DFDA5E41AB83F3F4B4 /* UIKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
-		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "GeoAR/config.xml"; sourceTree = "<group>"; };
-		C5FB4DB0B69B4EEBAAE52798 /* WTWikitudePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "WTWikitudePlugin.m"; path = "com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		0B602D3CC5234952B4FD2153 /* WTARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "WTARViewController.m"; path = "com.wikitude.phonegap.WikitudePlugin/WTARViewController.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		8E805332AA224198B0632008 /* libWikitudeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWikitudeSDK.a"; path = "GeoAR/Plugins/com.wikitude.phonegap.WikitudePlugin/libWikitudeSDK.a"; sourceTree = "<group>"; fileEncoding = 4; };
-		B6D84EF8715D41B187ABA8AF /* WTWikitudePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WTWikitudePlugin.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		FFE15718A1054D1E85677C26 /* WTARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WTARViewController.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTARViewController.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		A1A8ED3BBC154AD9A0E99777 /* WTArchitectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WTArchitectView.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTArchitectView.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		32F4FCA5BE7445F3A078182D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		0F757A8C9D7541A7BD48FAD2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CFNetwork.framework"; path = "System/Library/Frameworks/CFNetwork.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		35E10A3C480145C68B15BB97 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreMedia.framework"; path = "System/Library/Frameworks/CoreMedia.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		531B2D6F623741C8A5FF0A49 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		2AB88FCBE4C04B74A53609B6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		1FBB7A9EFBB44175BE711094 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		7E1D00991EBE41B3A5078F41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		4E4CB276560F4232A0EBDA94 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MediaPlayer.framework"; path = "System/Library/Frameworks/MediaPlayer.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		BD51C4F1BD394B66837538C8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGLES.framework"; path = "System/Library/Frameworks/OpenGLES.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		A08C0B3766A14252A35FFB46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		60C289C32904414D80B72076 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		F666E41FD3CF41A696B71B39 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		DDEB94DFDA5E41AB83F3F4B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		8BFC79F9428543D9A8611270 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
-		93DD23F608CC42D7BFD1EFFE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
-		166E2630BC474E979142741A /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		1E22A9EEF49D4FBFB8F1F91A /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		F666E41FD3CF41A696B71B39 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = GeoAR/config.xml; sourceTree = "<group>"; };
+		FFE15718A1054D1E85677C26 /* WTARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTARViewController.h; path = com.wikitude.phonegap.WikitudePlugin/WTARViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +188,7 @@
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			name = Classes;
-			path = "GeoAR/Classes";
+			path = GeoAR/Classes;
 			sourceTree = SOURCE_ROOT;
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -240,7 +240,7 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
-			path = "GeoAR";
+			path = GeoAR;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -255,7 +255,7 @@
 				8D1107310486CEB800E47090 /* GeoAR-Info.plist */,
 			);
 			name = Resources;
-			path = "GeoAR/Resources";
+			path = GeoAR/Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -305,7 +305,7 @@
 				1E22A9EEF49D4FBFB8F1F91A /* CDVLocation.h */,
 			);
 			name = Plugins;
-			path = "GeoAR/Plugins";
+			path = GeoAR/Plugins;
 			sourceTree = SOURCE_ROOT;
 		};
 		308D052D1370CCF300D202BF /* icons */ = {
@@ -385,8 +385,8 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "GeoAR";
-			productName = "GeoAR";
+			name = GeoAR;
+			productName = GeoAR;
 			productReference = 1D6058910D05DD3D006BFB54 /* GeoAR.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -397,8 +397,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__CLI__" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GeoAR" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -563,6 +575,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "GeoAR/GeoAR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GeoAR/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -577,12 +593,8 @@
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "GeoAR";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/GeoAR/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
-				);
+				PRODUCT_NAME = GeoAR;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -598,6 +610,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "GeoAR/GeoAR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GeoAR/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -612,12 +628,8 @@
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "GeoAR";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/GeoAR/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
-				);
+				PRODUCT_NAME = GeoAR;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -724,7 +736,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__CLI__" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GeoAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

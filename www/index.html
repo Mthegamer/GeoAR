@@ -8,7 +8,12 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<style>
-	[data-role="header"] { padding-top: 20px !important;}
+		[data-role="header"] { padding-top: 20px !important;}
+		[data-role="header"] h1 { color: #e12f31; }
+        [data-role="header"] [data-role="button"] { margin-top: 20px; }
+		#map-canvas { margin: 0; padding: 0; }
+		#info-loc { padding-top: 0; }
+		#info-loc h1 { margin-top: 5px; }
 	</style>
 
 	<script src="cordova.js"></script> 
@@ -24,7 +29,8 @@
 
 <div data-role="page" id="map-page">
 	<div data-role="header" data-theme="a">
-		<h1>Maps</h1>
+		<h1>GeoAR</h1>
+		<a href="#toCamera" class="toCamera ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-camera ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Cámara</a>
 	</div>
 
 	<div class="ui-content" id="map-canvas">
