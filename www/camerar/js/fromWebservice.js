@@ -1,3 +1,4 @@
+// World object
 var World = {
 	markerDrawable_idle: null,
 	markerDrawable_selected: null,
@@ -35,6 +36,8 @@ var World = {
 		World.currentMarker = null;
 	}
 };
+
+// Foursquare object
 var foursquare = {
 	client_id: 'EXX1BOFMQDAWMTSTKSBA2SL20ONA1DIB0HFDNCIRCIXDHX5U',
 	clien_secret: 'ELZCHJCR440OLXUVT23ZHRBSMY4QNZKGPUZZIIL4XTLK1AR3',
@@ -47,6 +50,8 @@ var foursquare = {
 		});
 	}
 };
+
+// Geolocate object
 var geolocate = {
 	lat: 0, lng: 0, alt: 0,
 	success: function (pos) {
@@ -56,7 +61,8 @@ var geolocate = {
 
 		World.markerList = [];
 
-		foursquare.list(pos.coords.latitude + ',' + pos.coords.longitude, function (res) {
+		// List foursquare venues
+		foursquare.list(this.lat + ',' + this.lng, function (res) {
 
 			World.markerDrawable_idle = new AR.ImageResource("assets/marker_idle.png");
 			World.markerDrawable_selected = new AR.ImageResource("assets/marker_selected.png");
@@ -65,15 +71,16 @@ var geolocate = {
 			var venues = res.response.venues;
 			for (x = 0; x < venues.length; x++) {
 				var venue = venues[x];
-				var singlePoi = {
+				// Create marker on camera
+				var singlePoi = new Marker({
 					"id": venue.id,
 					"latitude": parseFloat(venue.location.lat),
 					"longitude": parseFloat(venue.location.lng),
-					"altitude": parseFloat(pos.coords.altitude + 2),
+					"altitude": parseFloat(this.alt + 2),
 					"title": venue.name,
 					"description": venue.location.address
-				};
-				World.markerList.push(new Marker(singlePoi));
+				});
+				World.markerList.push(singlePoi);
 				World.updateStatusMessage(x + ' places loaded');
 			}
 		});

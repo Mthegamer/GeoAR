@@ -2,10 +2,10 @@
 <widget id="im.dnn.geoar" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>GeoAR</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Pruebas de la aplicación de realidad aumentada para geo-ubicaciones con Wikitude y Apache Cordova
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        Daniel García - @dannegm
     </author>
     <content src="index.html" />
     <feature name="http://api.phonegap.com/1.0/device" />
