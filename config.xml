@@ -4,7 +4,7 @@
     <description>
         Pruebas de la aplicación de realidad aumentada para geo-ubicaciones con Wikitude y Apache Cordova
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="im@danielgarcia.me" href="http://danielgarcia.me">
         Daniel García - @dannegm
     </author>
     <content src="index.html" />
@@ -16,6 +16,5 @@
     <access origin="http://127.0.0.1*" />
     <access origin="*" />
 
-    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.6" />
-    <gap:plugin name="com.wikitude.phonegap.WikitudePlugin.WikitudePlugin" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
 </widget>

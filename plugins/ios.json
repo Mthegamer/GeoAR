@@ -5,6 +5,24 @@
     },
     "config_munge": {
         "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"WikitudePlugin\"><param name=\"ios-package\" value=\"WTWikitudePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"*\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
             "framework": {
                 "parents": {
                     "AssetsLibrary.framework": [
@@ -116,32 +134,14 @@
                         }
                     ]
                 }
-            },
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"WikitudePlugin\"><param name=\"ios-package\" value=\"WTWikitudePlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"*\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
             }
         }
     },
     "installed_plugins": {
-        "com.wikitude.phonegap.WikitudePlugin": {
+        "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "im.dnn.geoar"
         },
-        "org.apache.cordova.geolocation": {
+        "com.wikitude.phonegap.WikitudePlugin": {
             "PACKAGE_NAME": "im.dnn.geoar"
         }
     },

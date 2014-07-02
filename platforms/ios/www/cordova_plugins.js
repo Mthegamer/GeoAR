@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
-        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
-        "clobbers": [
-            "WikitudePlugin"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.geolocation/www/Coordinates.js",
         "id": "org.apache.cordova.geolocation.Coordinates",
         "clobbers": [
@@ -34,13 +27,20 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+        "clobbers": [
+            "WikitudePlugin"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.wikitude.phonegap.WikitudePlugin": "3.3.1",
-    "org.apache.cordova.geolocation": "0.3.7"
+    "org.apache.cordova.geolocation": "0.3.8",
+    "com.wikitude.phonegap.WikitudePlugin": "3.3.1"
 }
 // BOTTOM OF METADATA
 });

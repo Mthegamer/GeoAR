@@ -65,6 +65,7 @@
 		error: function (error) {
 			// Drawing the fail map
 			map.draw(map.defaultLatLng);
+	    	alert('Geolocate unavailable');
 		},
 		// Init the object
 		init: function () {
@@ -154,6 +155,8 @@
 			win.init();
 			geolocate.init();
 			wikitude.init();
+
+			//WikitudePlugin.loadARchitectWorld("www/camerar/index.html");
 
 			// Deleting all links
 			$('a').click(function (e) {
